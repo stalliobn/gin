@@ -6,7 +6,7 @@
   top: 100px;
   left: 50%;
   margin-left: -288px;
-  margin-bottom: 100px;
+margin-bottom: 100px;
   @include breakpoint((to: 600px)) {
     margin-left: 0;
     left: 3%;
