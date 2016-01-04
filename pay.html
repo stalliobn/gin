@@ -18,15 +18,17 @@
     <form class="user-data">
       <span class="description">Ваш номер телефона в формате +38</span>
       <div class="tel-wrap clearfix">
-        <input type="tel" value="+380" />
-        <input type="tel" placeholder="Введите номер телефона" />
+        <span class="flag">
+          <input type="tel" value="+380" />
+        </span>
+        <input type="tel" class="number" placeholder="Введите номер телефона" />
       </div>
       <span class="description">Выберите способ оплаты</span>
       <select>
         <option value="">Visa / MasterCard</option>
-        <option value="1">Opt1</option>
-        <option value="2">Opt2</option>
-        <option value="3">Opt3</option>
+        <option value="1">Privat 24</option>
+        <option value="2">Терминалы пополнения</option>
+        <option value="3">Другие способы оплаты</option>
       </select>
       <div id="custom-select">
         <div id="current-option" data-value="">
@@ -34,9 +36,9 @@
         </div>
         <ul id="custom-options">
           <li data-value="">Visa / MasterCard</li>
-          <li data-value="1">Opt1</li>
-          <li data-value="2">Opt2</li>
-          <li data-value="3">Opt3</li>
+          <li data-value="1">Privat 24</li>
+          <li data-value="2">Терминалы пополнения</li>
+          <li data-value="3">Другие способы оплаты</li>
         </ul>
       </div>
       <div class="button-wrap">

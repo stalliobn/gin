@@ -29,22 +29,19 @@
       input[type=submit] {
         padding: 15px 40px;
       }
+      input[type=tel] {
+        font-size: 13px;
+      }
     }
     .button-wrap {
       margin-top: 30px;
     }
   }
-
   @include breakpoint((to: 350px)) {
     .user-data {
-      input[type=tel] {
-        &:first-child {
-          width: 19%;
-        }
-        &:last-child {
-          width: 80%;
-          padding-left: 3px;
-        }
+      .number {
+        width: 70%;
+        padding-left: 3px;
       }
     }
   }
@@ -84,23 +81,38 @@
     font-weight: 400;
     margin-bottom: 5px;
   }
+  .flag {
+    width: 70px;
+    float: left;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 22px;
+      height: 15px;
+      top: 13px;
+      left: 4px;
+      background: url(../images/sprite.png) no-repeat 0px -53px;
+    }
+    input {
+      width: 100%;
+      text-align: right;
+      padding: 10px 5px 10px 0;
+    }
+  }
   input[type=tel] {
     @include inline-block;
     border: 1px solid #c8c8c8;
-    padding: 10px 0 10px 10px;
     border-radius: 5px;
     margin-bottom: 20px;
     font-size: 14px;
-    &:first-child {
-      width: 20%;
-      float: left;
-      text-align: center;
-      padding-left: 0;
-    }
-    &:last-child {
-      width: 75%;
-      float: right;
-    }
+  }
+  .number {
+    width: 75%;
+    float: right;width: 75%;
+    float: right;
+    padding: 10px 0 10px 10px;
   }
   select {
     width: 100%;
@@ -117,7 +129,6 @@
     }
   }
 }
-
 .button-wrap {
   text-align: center;
   margin-top: 50px;
