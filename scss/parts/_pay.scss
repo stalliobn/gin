@@ -13,7 +13,7 @@
     left: 3%;
     top: 10px;
   }
-  @include breakpoint((to: 420px)) {
+  @include breakpoint((to: 440px)) {
     .pay-wrap {
       padding-left: 20px;
       padding-right: 20px;
@@ -37,7 +37,7 @@
       margin-top: 30px;
     }
   }
-  @include breakpoint((to: 350px)) {
+  @include breakpoint((to: 380px)) {
     .user-data {
       .number {
         width: 70%;
@@ -116,7 +116,7 @@
     font-size: 14px;
   }
   .number {
-    width: 74%;
+    width: 76%;
     float: right;
     padding: 10px 0 10px 10px;
   }
