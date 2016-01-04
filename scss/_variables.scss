@@ -1,0 +1,30 @@
+$wrapper-width: 575px;
+$animation-speed: 300ms;
+$max-z-index: 1000;
+$max-big-image-width: 1280px;
+
+$breakpoints: (
+  desktop: $wrapper-width,
+  big-tablet: 780px,
+  small-tablet: 620px,
+  big-phon: 500px,
+  phon: 350px,
+);
+
+// ================================ DIMENSIONS =================================
+$dimensions: (
+  frontpage-news-margin: 1.53%,
+  frontpage-news-width: 32.312%,
+);
+
+// ================================== COLORS ===================================
+$white: #fff;
+$black: #000;
+$header-bg: #5b6169;
+$text-color: #4e4e4e;
+
+$about-bg: #d1d1d1;
+
+$success-bg: #242b38;
+$green: #2ecc71;
+$blue: #2a63cb;
