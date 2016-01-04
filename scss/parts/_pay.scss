@@ -34,6 +34,20 @@
       margin-top: 30px;
     }
   }
+
+  @include breakpoint((to: 350px)) {
+    .user-data {
+      input[type=tel] {
+        &:first-child {
+          width: 19%;
+        }
+        &:last-child {
+          width: 80%;
+          padding-left: 3px;
+        }
+      }
+    }
+  }
 }
 .logo-gin {
   text-align: center;
@@ -71,12 +85,22 @@
     margin-bottom: 5px;
   }
   input[type=tel] {
-    display: block;
+    @include inline-block;
     border: 1px solid #c8c8c8;
-    width: 100%;
-    padding: 10px 0 10px 15px;
+    padding: 10px 0 10px 10px;
     border-radius: 5px;
     margin-bottom: 20px;
+    font-size: 14px;
+    &:first-child {
+      width: 20%;
+      float: left;
+      text-align: center;
+      padding-left: 0;
+    }
+    &:last-child {
+      width: 75%;
+      float: right;
+    }
   }
   select {
     width: 100%;
@@ -106,7 +130,6 @@
   margin-top: 5px;
   background: #fff;
   border: 1px solid #c8c8c8;
-
   cursor: pointer;
   border-radius: 5px;
 }
@@ -130,6 +153,8 @@
   height: 25px;
   color: #6a6f78;
   font-size: 17px;
+  padding-left: 10px;
+  @include box-sizing;
 }
 #custom-options li:last-child {
   border-radius: 0 0 4px 4px;
@@ -144,7 +169,7 @@
 .icon {
   position: relative;
   display: block;
-  padding: 10px 0 10px 15px;
+  padding: 10px 0 10px 10px;
   font-size: 17px;
   color: #6a6f78;
 }
